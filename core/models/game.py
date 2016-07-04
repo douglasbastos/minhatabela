@@ -15,8 +15,8 @@ class Game(models.Model):
     date = models.DateTimeField('Data e Hora', blank=True, null=True)
 
     class Meta:
-        verbose_name = 'Competição'
-        verbose_name_plural = 'Competições'
+        verbose_name = 'Jogo'
+        verbose_name_plural = 'Jogos'
 
     def __unicode__(self):
         return self.name
