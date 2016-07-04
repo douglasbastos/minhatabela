@@ -5,7 +5,6 @@ from .rounds import Rounds
 
 
 class Game(models.Model):
-    name = models.CharField('Nome', max_length=255)
     team_home = models.ForeignKey(Team, related_name='Mandante')
     team_visitor = models.ForeignKey(Team, related_name='Visitante')
     result_home = models.PositiveSmallIntegerField('Resultado Mandante', blank=True, null=True)
