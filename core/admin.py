@@ -18,7 +18,7 @@ class CompetitionAdmin(admin.ModelAdmin):
 
 
 class RoundsAdmin(admin.ModelAdmin):
-    list_display = ('number', 'competition')
+    list_display = ('id', 'number', 'competition')
     fieldsets = ((None, {
         'fields': ('number', 'competition'),
     }),)
@@ -32,7 +32,7 @@ class TeamAdmin(admin.ModelAdmin):
 
 
 class CompetitionHasTeamAdmin(admin.ModelAdmin):
-    list_display = ('competition', 'team')
+    list_display = ('id', 'competition', 'team')
     fieldsets = ((None, {
         'fields': ('competition', 'team'),
     }),)
