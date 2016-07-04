@@ -27,7 +27,7 @@ class RoundsAdmin(admin.ModelAdmin):
 class TeamAdmin(admin.ModelAdmin):
     list_display = ('name',)
     fieldsets = ((None, {
-        'fields': ('name',),
+        'fields': ('name', 'flag'),
     }),)
 
 
