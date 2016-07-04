@@ -13,7 +13,7 @@ class GameAdmin(admin.ModelAdmin):
 class CompetitionAdmin(admin.ModelAdmin):
     list_display = ('name',)
     fieldsets = ((None, {
-        'fields': ('name',),
+        'fields': ('name', 'logo', 'creator_user'),
     }),)
 
 
