@@ -12,4 +12,4 @@ class Rounds(models.Model):
         verbose_name_plural = 'Rodadas'
 
     def __unicode__(self):
-        return '{} #{}'.format(self.competition.name, self.number)
+        return u'{} #{}'.format(self.competition.name, self.number)

@@ -9,5 +9,5 @@ class CompetitionHasTeam(models.Model):
     team = models.ForeignKey(Team)
 
     class Meta:
-        verbose_name = 'Time/competição'
-        verbose_name_plural = 'Times/competições'
+        verbose_name = u'Time/competição'
+        verbose_name_plural = u'Times/competições'
