@@ -5,8 +5,12 @@ from .models import Game, Competition, Rounds, Team, CompetitionHasTeam
 
 
 class GameAdmin(admin.ModelAdmin):
+    list_display = ('rounds', 'team_home', 'team_visitor', 'result_home',
+                    'result_visitor', 'date', 'local')
     fieldsets = ((None, {
-        'fields': ('name',),
+        'fields': (('team_home', 'team_visitor', 'rounds'),
+                   ('date', 'local'),
+                   ('result_home', 'result_visitor')),
     }),)
 
 
